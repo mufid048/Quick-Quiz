@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="practise.css">
+</head>
+<body> 
+  
+  <div id="pv2" class="flex-center" style="display:flex; justify-content: end; margin-top: 1px; margin-right: 20px;">
+    <a class="btn" id="logout" href="/loginA.html">logout</a>
+  </div>
+    <div class="container">
+      <img src="./images/images-removebg-preview.png" alt="error..!">
+        <form>
+          <div class="dropdown">
+            <button id="examselector" class="dropbtn">Select Exam</button>
+            <div class="dropdown-content">
+              <a href="#" onclick="changetogate()" id="gate">GATE</a><hr>
+              <a href="#" onclick="changetojee()" id="jee">JEE</a><hr>
+              <a href="#" onclick="changetoneet()" id="neet">NEET</a><hr>
+            </div>
+          </div>
+          <div class="dropdown">
+            <button onclick="subjectchanger()" id="subjectselector" class="dropbtn">Select Subject</button>
+            <div id="subjectdropdown" class="dropdown-content">
+              <a href="#" id="c">C</a><hr>
+              <a href="#" id="c++">C++</a><hr>
+              <a href="#" id="c#">C#</Colg></a><hr>
+            </div>
+          </div>
+            <a class="btn" href="/exam.html">Practice</a>
+        </form>
+    </div>
+    <script>
+        /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    <script>
+      function changetogate(){
+        document.getElementById('examselector').innerHTML="GATE";
+        document.getElementById('subjectdropdown').innerHTML='<a href="#" onclick="changetocsit()" id="csit">CS/IT</a><hr><a href="#" onclick="changetome()" id="me">ME</a><hr><a href="#" onclick="changetoae()" id="ae">AE</Colg></a><hr>'
+      }
+      function changetojee(){
+        document.getElementById('examselector').innerHTML="JEE";
+        document.getElementById('subjectdropdown').innerHTML='<a href="#" onclick="changetomath()" id="csit">Mathematics</a><hr><a href="#" onclick="changetophy()" id="me">Physics</a><hr><a href="#" onclick="changetochem()" id="ae">Chemistry</Colg></a><hr>'
+      }
+      function changetoneet(){
+        document.getElementById('examselector').innerHTML="NEET";
+        document.getElementById('subjectdropdown').innerHTML='<a href="#" onclick="changetobio()" id="csit">Biology</a><hr><a href="#" onclick="changetophy()" id="me">Physics</a><hr><a href="#" onclick="changetochem()" id="ae">Chemistry</Colg></a><hr>'
+      }
+      
+      function changetocsit(){
+        document.getElementById('subjectselector').innerHTML="CS/IT";
+      }
+      function changetome(){
+        document.getElementById('subjectselector').innerHTML="ME";
+      }
+      function changetoae(){
+        document.getElementById('subjectselector').innerHTML="AE";
+      }
+      function changetomath(){
+        document.getElementById('subjectselector').innerHTML="MATHEMATICS";
+      }
+      function changetophy(){
+        document.getElementById('subjectselector').innerHTML="PHYSICS";
+      }
+      function changetochem(){
+        document.getElementById('subjectselector').innerHTML="CHEMISTRY";
+      }
+      function changetobio(){
+        documnet.getElementById('subjectselector').innerHTML="BIOLOGY"
+      }
+    </script>
+    
+</body>
+</html>

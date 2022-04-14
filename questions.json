@@ -1,0 +1,64 @@
+[
+    {
+      "question": "Which of the following is not a valid C variable name?",
+      "choice1": "int number",
+      "choice2": "float rate",
+      "choice3": "int variable_count",
+      "choice4": "int $main",
+      "answer": 4,
+      "exam" : "gate",
+      "subject" : "it"
+    },
+    {
+      "question": " All keywords in C are in ____________",
+      "choice1": " LowerCase letters",
+      "choice2": " UpperCase letters",
+      "choice3": "CamelCase letters",
+      "choice4": "None of the mentioned",
+      "answer": 1,
+      "exam" : "gate",
+      "subject" : "it"
+    },
+    {
+      "question": "  Which is valid C expression?",
+      "choice1": "int my_num = 100,000",
+      "choice2": " int my_num = 100000",
+      "choice3": " int my num = 1000",
+      "choice4": "int $my_num = 10000",
+      "answer": 2,
+      "exam" : "gate",
+      "subject" : "it"
+    },
+    {
+      "question": "  Which of the following cannot be a variable name in C?",
+      "choice1": "volatile",
+      "choice2": " true",
+      "choice3": " friend",
+      "choice4": "export",
+      "answer": 1,
+      "exam" : "gate",
+      "subject" : "it"
+    },
+    {
+      "question": "  What is short int in C programming?",
+      "choice1": "The basic data type of C",
+      "choice2": " Qualifier",
+      "choice3": " Short is the qualifier and int is the basic data type",
+      "choice4": "All of the mentioned",
+      "answer": 3,
+      "exam" : "gate",
+      "subject" : "Physics"
+    },
+    {
+      "question": "  Which of the following declaration is not supported by C language?",
+      "choice1": "String str",
+      "choice2": " char *str",
+      "choice3": "float str = 3e2",
+      "choice4": "Both String str; & float str = 3e2",
+      "answer": 1,
+      "exam" : "gate",
+      "subject" : "Physics"
+    }
+
+
+  ]
